@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Week05_gaodeAPI</title>
+<title>冯静雯-高德地图API（全部）-181013037_week05</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13113,6 +13113,13 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#20911;&#38745;&#38639;181013037_&#39640;&#24503;&#22320;&#22270;API&#35843;&#29992;&#20989;&#25968;_github&#24320;&#28304;&#20195;&#30721;"><a href="https://github.com/JW-Fung/2020_API-ML-AI/blob/master/week05hw_gaodemap_API_python/week05_gaodemap_API_python%E5%87%BD%E6%95%B0%E5%B0%81%E8%A3%85.py">&#20911;&#38745;&#38639;181013037_&#39640;&#24503;&#22320;&#22270;API&#35843;&#29992;&#20989;&#25968;_github&#24320;&#28304;&#20195;&#30721;</a><a class="anchor-link" href="#&#20911;&#38745;&#38639;181013037_&#39640;&#24503;&#22320;&#22270;API&#35843;&#29992;&#20989;&#25968;_github&#24320;&#28304;&#20195;&#30721;">&#182;</a></h1>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[124]:</div>
@@ -21001,10 +21008,48 @@ Name: instruction, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[275]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">driving</span><span class="p">():</span>
+    <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://restapi.amap.com/v4/grasproad/driving&quot;</span>
+    <span class="n">params</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;key&#39;</span><span class="p">:</span><span class="n">key_fung</span>
+    <span class="p">}</span>
+    <span class="n">body</span><span class="o">=</span>   <span class="p">[{</span>
+    <span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="mf">116.449429</span><span class="p">,</span>
+    <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="mf">40.014844</span><span class="p">,</span>
+    <span class="s2">&quot;sp&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="s2">&quot;ag&quot;</span><span class="p">:</span> <span class="mi">110</span><span class="p">,</span>
+    <span class="s2">&quot;tm&quot;</span><span class="p">:</span> <span class="mi">1478831753</span>
+    <span class="p">},</span> <span class="p">{</span>
+    <span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="mf">116.449639</span><span class="p">,</span>
+    <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="mf">40.014776</span><span class="p">,</span>
+    <span class="s2">&quot;sp&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="s2">&quot;ag&quot;</span><span class="p">:</span> <span class="mi">110</span><span class="p">,</span>
+    <span class="s2">&quot;tm&quot;</span><span class="p">:</span> <span class="mi">23</span>
+    <span class="p">},</span> <span class="p">{</span>
+    <span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="mf">116.449859</span><span class="p">,</span>
+    <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="mf">40.014716</span><span class="p">,</span>
+    <span class="s2">&quot;sp&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="s2">&quot;ag&quot;</span><span class="p">:</span> <span class="mi">111</span><span class="p">,</span>
+    <span class="s2">&quot;tm&quot;</span><span class="p">:</span> <span class="mi">33</span>
+    <span class="p">},</span> <span class="p">{</span>
+    <span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="mf">116.450074</span><span class="p">,</span>
+    <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="mf">40.014658</span><span class="p">,</span>
+    <span class="s2">&quot;sp&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="s2">&quot;ag&quot;</span><span class="p">:</span> <span class="mi">110</span><span class="p">,</span>
+    <span class="s2">&quot;tm&quot;</span><span class="p">:</span> <span class="mi">31</span>
+    <span class="p">},</span> <span class="p">{</span>
+    <span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="mf">116.450273</span><span class="p">,</span>
+    <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="mf">40.014598</span><span class="p">,</span>
+    <span class="s2">&quot;sp&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="s2">&quot;ag&quot;</span><span class="p">:</span> <span class="mi">111</span><span class="p">,</span>
+    <span class="s2">&quot;tm&quot;</span><span class="p">:</span> <span class="mi">20</span>
+    <span class="p">}]</span>
+    <span class="n">respond</span><span class="o">=</span><span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">params</span><span class="p">,</span><span class="n">json</span><span class="o">=</span><span class="n">body</span><span class="p">)</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">respond</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">data</span>
 </pre></div>
 
     </div>
@@ -21014,26 +21059,39 @@ Name: instruction, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[276]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">driving</span><span class="p">()</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="output_wrapper">
+<div class="output">
 
-    </div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[276]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;data&#39;: {&#39;distance&#39;: 33.0,
+  &#39;points&#39;: [{&#39;x&#39;: 116.44942000249563, &#39;y&#39;: 40.014843356125866},
+   {&#39;x&#39;: 116.44945705955585, &#39;y&#39;: 40.01453960973057}]},
+ &#39;errcode&#39;: 0,
+ &#39;errdetail&#39;: None,
+ &#39;errmsg&#39;: &#39;OK&#39;,
+ &#39;ext&#39;: None}</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
